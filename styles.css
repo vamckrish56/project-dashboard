@@ -1,0 +1,339 @@
+
+body {
+    /*background-image: url("../img/grey mesh.jpg");*/
+    background-color:black;
+    font-family: sans-serif;
+    color: #FFF;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header {
+    background-color: #0B3752;
+    left:-10px;
+    top:-10px;
+    height:60px;
+    position:relative;
+    font-size: 25px;
+}
+
+#description {
+    position: relative;
+    display: inline-block;
+    left: 200px;
+    top: 15px;
+    height: 100%;
+}
+
+#suite-name{
+    float: left;
+    margin-left: -175px;
+    margin-right: 100px;
+    position:relative;
+}
+
+#suite-name::after{
+    /*background-image: url("../img/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    */
+    /*width: 55px;
+    height: 100%;
+    top: -5px;
+    position: absolute;
+    margin-left: 0px;
+    content: '';*/
+}
+
+#team-name {
+    float: left;
+    margin-left: 20px;
+}
+
+.branding {
+    width: 200px;
+    height:60px;
+    margin-left:1px;
+    position:relative;
+    left:0;
+}
+
+.arrow {
+    width: 55px;
+    height:100%;
+    margin-left:2px;
+    position:relative;
+    left:0;
+    outline-color:white;
+}
+
+.powered-by {
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:10px;
+}
+
+.powered-by img {
+    width: 25px;
+    height: 31px
+}
+
+.build-list {
+    width: 97%;
+    margin: 10px 15px;
+    text-justify: distribute;
+    text-align: justify;
+}
+
+.build {
+    width:48%;
+    margin:5px 0px;
+    overflow:hidden;
+    display: inline-block;
+    padding: 5px 10px;
+    height:90px;
+    text-align: left;
+    background-color: #e7c500;
+    box-shadow: 4px 4px 2px #555;
+}
+
+.default-build {
+    width:48%;
+    margin:5px 0px;
+    overflow:hidden;
+    display: inline-block;
+    padding: 5px 10px;
+    height:200px;
+    text-align: center;
+    background-color: #e7c500;
+    box-shadow: 4px 4px 2px #555;
+    border-radius:10px;
+}
+
+.server-build {
+    width:48%;
+    margin:5px 0px;
+    overflow:hidden;
+    display: inline-block;
+    padding: 5px 10px;
+    height:200px;
+    text-align: center;
+    background-color: #e7c500;
+    box-shadow: 4px 4px 2px #555;
+    border-radius:10px;
+}
+
+.warning {
+    color: red;
+    margin: auto;
+    font-size: 40px;
+}
+
+.build.old {
+    opacity:.6;
+}
+
+.build.old .build-date {
+    background-color: #6f6855;
+    opacity: 0.8;
+}
+
+.build.success {
+    background-color: #255e11;
+}
+
+.default-build.success {
+    background-color: #255e11;
+}
+
+.default-build.success.coverage {
+    background-color: #255e11;
+    text-align: center;
+}
+.default-build.success.vulnerabilities {
+    background-color: #f44271;
+    text-align: center;
+}
+.default-build.success.bugs {
+    background-color: #f44141;
+    text-align: center;
+}
+.default-build.success.codeSmells {
+    background-color: orange;
+    text-align: center;
+}
+.default-build.success.uds.up {
+    background-color: #255e11;
+    text-align: center;
+}
+.default-build.success.uds.down {
+    background-color: #a5a19f;
+    text-align: center;
+}
+.default-build.success.uds.starting {
+    background-color: #f48541;
+    text-align: center;
+}
+
+
+.server-build.memory {
+    background-color: #255e11;
+}
+
+.server-build.success.diskspace {
+    background-color: #255e11;
+    text-align: center;
+}
+.server-build.success.database {
+    background-color: #f44271;
+    text-align: center;
+}
+.server-build.success.cpu {
+    background-color: #f44141;
+    text-align: center;
+}
+.server-build.success.dataload {
+    background-color: orange;
+    text-align: center;
+}
+.server-build.success.consumption {
+    background-color: orange;
+    text-align: center;
+}
+
+
+.build.failure {
+    background-color: #7f0b0b;
+}
+
+.build.running {
+    background-color: #828e00;
+}
+
+.build .pending-changes {
+    float: right;
+    display: none;
+}
+
+.build .pending-changes.delayed::after {
+    // content: ' pending';
+    color: white;
+}
+
+.build .pending-changes.delayed {
+    display: inherit;
+    color: red;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.build.running.failure {
+    background-color: #9b6f00;
+}
+
+.build.running.overtime .build-date {
+    background-color: #bf1313;
+    color: white;
+}
+
+.build h3 {
+    margin:0;
+    float:left;
+    font-size:16px;
+}
+
+.build .build-date {
+    float:right;
+    padding: 5px 10px;
+}
+
+.build h2 {
+	text-align:left;
+	width: 100%;
+    float:left;
+    margin:3px 0;
+    font-size:31px;
+}
+
+.build h4 {
+    margin: 0;
+	display: block;
+    font-size: 14px;
+	float:left;
+}
+
+.build .committers {
+    float: left;
+	font-size: 14px;
+    padding: 0px 10px;
+}
+
+.build .committers-default {
+    float: left;
+	font-size: 14px;
+    padding: 0px 10px;
+}
+
+.build .text-status {
+    float: left;
+	font-size: 14px;
+    padding: 0px 10px;
+}
+
+.default-build .text-status-default {
+    float: center;
+	font-size: 40px;
+    padding: 0px 10px;
+}
+
+.server-build .text-status-server {
+    float: center;
+	font-size: 50px;
+    padding: 0px 10px;
+}
+
+.server-build .text-status-server-dataload {
+    float: center;
+	font-size: 25px;
+    padding: 0px 10px;
+}
+
+.server-build .time-to-complete-server {
+    float: center;
+	font-size: 15px;
+    padding: 0px 10px;
+}
+
+.server-build .message-server {
+    float: center;
+	font-size: 14px;
+    padding: 0px 10px;
+}
+
+.build.hidden {
+    visibility:hidden;
+}
+
+#progressBar {
+    width:100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 10px;
+}
+
+#progressBar div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: green;
+    box-sizing: border-box;
+}
+
